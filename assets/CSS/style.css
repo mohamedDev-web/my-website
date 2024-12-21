@@ -130,19 +130,50 @@ nav>ul>li:nth-child(5){
 footer{
     background-color: black;
     color: white;
+    width:100%;
+}
+footer>.row{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+footer>.row>div{
+    width: 33.3%;
+    height:30vh;
+    text-align: center;
+}
+footer .img-App{
+    width:100%
+}
+footer .img-App img{
+    width: 45%;
+}
+footer a{
+   text-decoration:none;
+   color:white;
 }
 /* end footer---------------------------------------------------------------------------------------------- */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
-/* responsive */
+/* responsive ..............................................................................................*/
 @mediA screen and (max-width:800px){
+      /* start nav .......................*/
     nav>ul>li:nth-child(5){
         display: block;
     }
     nav>ul>li:nth-child(3){
         display: none;
     }
+       /* end nav............................ */
+    /* start footer....................... */
+    footer>.row>div{
+        width: 50%;
+    }
+     /* end footer......................... */
+
 }
+
 @media screen and (max-width:444px){
+    /* start nav .......................*/
     nav{
         height: 60px;
     }
@@ -156,5 +187,11 @@ footer{
     nav>ul>li:nth-child(2){
         display:none;
     }
+    /* end nav............................ */
+    /* start footer....................... */
+    footer>.row>div{
+        width: 100%;
+    }
+    /* end footer......................... */
 }
 @media screen and (max-width:200px)
