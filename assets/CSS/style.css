@@ -31,6 +31,16 @@ nav>ul{
         border-color:burlywood
     }
 }
+.nav-link{
+    text-decoration: none;
+    color:white;
+
+}
+.nav-link:hover{
+    color:chocolate;
+}
+
+/* start li for form in the nav tag -------------------------------------------*/
 #search-input-nav{
     border-top-right-radius:0px;
     border-bottom-right-radius:0px;
@@ -77,18 +87,17 @@ nav>ul{
      border-top-right-radius:50px;
     border-bottom-right-radius:50px;
 }
-nav>ul>li:nth-child(4){
+/* end li for form in the nav tag --------------------------------------------*/
+/* start for third li for pages */
+nav>ul>li:nth-child(3)>ul>.nav-item:first-child .nav-link{
+    color:chocolate ;
+}
+/* end for third li for icon list  */
+
+
+nav>ul>li:nth-child(5){
     display: none;
 }
-.nav-link{
-    text-decoration: none;
-    color:white;
-
-}
-.nav-link:hover{
-    color:chocolate;
-}
-
 #i-icons-list{
     background-color:chocolate;
     color:burlywood;
@@ -99,9 +108,34 @@ nav>ul>li:nth-child(4){
     padding: 0;
     margin: 0;
 }
+.list{
+    width:200px;
+    height: 90vh;
+    position:absolute;
+    top:50px;
+    right:0;
+    background-color: burlywood;
+    transition-duration: 1.2s;
+    transition-timing-function: linear ;
+}
+.list>ul>li:first-child{
+    display: none;
+}
+.list>ul>li:hover{
+    background-color: rgb(243, 199, 142);
+}
+/* end nav --------------------------------------------------------------------------------------*/
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* start footer-----------------------------------------------------------------------------------------------*/
+footer{
+    background-color: black;
+    color: white;
+}
+/* end footer---------------------------------------------------------------------------------------------- */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* responsive */
-@mediA screen and (max-width:767px){
-    nav>ul>li:nth-child(4){
+@mediA screen and (max-width:800px){
+    nav>ul>li:nth-child(5){
         display: block;
     }
     nav>ul>li:nth-child(3){
@@ -109,7 +143,18 @@ nav>ul>li:nth-child(4){
     }
 }
 @media screen and (max-width:444px){
+    nav{
+        height: 60px;
+    }
+    ul{
+        margin: 0px;
+        height: 100%;
+    }
+    .list>ul>li:first-child{
+        display: block;
+    }
     nav>ul>li:nth-child(2){
         display:none;
     }
 }
+@media screen and (max-width:200px)
