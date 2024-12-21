@@ -1,9 +1,14 @@
 body{
-    padding:0;
-    margin:0;
+    padding:0px;
+    margin:0px;
 }
 /* start nav------------------------------------------------------------------------------------------------------- */
+nav{
+    margin: 0px;
+    padding:0px;
+}
 nav>ul{
+    margin-top: 0px;
     background-color: burlywood;
     display:flex;
     flex-direction: row;
@@ -29,6 +34,48 @@ nav>ul{
 #search-input-nav{
     border-top-right-radius:0px;
     border-bottom-right-radius:0px;
+    border-bottom-left-radius:50px;
+    border-top-left-radius:50px;
+    border-color: chocolate;
+    border-width:2px;
+    background-color: burlywood;
+    color: chocolate;
+    outline:none;
+    box-shadow: 0px 0px 10px 1px chocolate inset;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation:input-search;
+    animation-duration:1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+}
+#search-input-nav::placeholder{
+    color: chocolate;
+    animation:input-search;
+    animation-duration:1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+}
+@keyframes input-search{
+    0%{
+        color:chocolate;
+    }
+   
+    50%{
+        color:rgba(210, 105, 30, 0.742);
+    }
+   
+    100%{
+        color:chocolate;
+    }
+}
+#search-button{
+     background-color: chocolate;
+     color: burlywood;
+     border:none;
+     border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
 }
 nav>ul>li:nth-child(4){
     display: none;
@@ -36,17 +83,24 @@ nav>ul>li:nth-child(4){
 .nav-link{
     text-decoration: none;
     color:white;
+
 }
 .nav-link:hover{
     color:chocolate;
 }
-#search-button{
-     background-color: chocolate;
-     color: burlywood;
-     border:none;
+
+#i-icons-list{
+    background-color:chocolate;
+    color:burlywood;
+    border: none
+}
+.bi-person-circle{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
 }
 /* responsive */
-@mediA screen and (max-width:681px){
+@mediA screen and (max-width:767px){
     nav>ul>li:nth-child(4){
         display: block;
     }
@@ -54,7 +108,7 @@ nav>ul>li:nth-child(4){
         display: none;
     }
 }
-@media screen and (max-width:373px){
+@media screen and (max-width:444px){
     nav>ul>li:nth-child(2){
         display:none;
     }
