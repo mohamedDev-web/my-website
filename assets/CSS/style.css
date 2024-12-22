@@ -114,6 +114,7 @@ nav>ul>li:nth-child(5){
     position:absolute;
     top:50px;
     right:0;
+    z-index: 1000;
     background-color: burlywood;
     transition-duration: 1.2s;
     transition-timing-function: linear ;
@@ -131,14 +132,25 @@ main{
     width:100%;
 }
 /*start  second div.row ----------------------------------------- */
+main hr{
+    display: inline-block;
+    width:150px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: chocolate;
+}
+/* start .row 2 */
 main>.row:nth-child(2){
-    width:100%;
+    width:110%;
+    background-color: burlywood;
+   
 }
 main>.row:nth-child(2)>.col-8{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    gap:10px
+    gap:10px;
+  
 
     
 }
@@ -146,6 +158,79 @@ main>.row:nth-child(2)>.col-8 img{
     width: 250px;
 
 }
+/* end .row 2 */
+/* start .row 3 */
+main>.row:nth-child(3){
+    background-image: linear-gradient(to bottom, burlywood 95%,rgba(220, 125, 0, 0.443) 100%);
+   
+}
+main>.row:nth-child(3)>col,main>.row:nth-child(5)>col {
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    background-image: linear-gradient(to bottom, burlywood 95%,rgba(220, 125, 0, 0.443) 100%);
+    border-bottom: 3px solid chocolate;
+    
+}
+/* end .row 3*/
+/* start .row  4*/
+main>.row:nth-child(4){
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center; 
+    background-image: linear-gradient(to bottom, burlywood 95%,rgba(220, 125, 0, 0.443) 100%);
+    border-bottom: 3px solid chocolate;
+     padding-bottom: 200px;
+}
+main>.row:nth-child(4)>.col{
+   
+   margin-top: 0;
+    width: 600px;
+    overflow-x:scroll;
+    display: flex;
+    gap:20px;
+}
+.card{
+    width:300px;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:space-between;
+    flex-shrink: 0;
+   
+}
+.card div{
+    width:100%;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: space-evenly;
+}
+.card span i{
+     color:orange;
+}
+
+
+/* end  .row 4 */
+/* start .row 5 */
+main>.row:nth-child(5)>.col{
+    width: 100%;
+    padding:50px;
+    background-image: linear-gradient(to right,grey 20%,burlywood 40%);
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 0;
+}
+main>.row:nth-child(5) img{
+    width:300px;
+    border-radius: 100px;
+}
+main>.row:nth-child(5)>.col>div{
+    width: 50%;
+
+}
+/* end .row 5 */
 /* end second div.row -------------------------------------------- */
 
 
@@ -176,6 +261,12 @@ footer .img-App img{
 footer a{
    text-decoration:none;
    color:white;
+}
+footer hr{
+    text-align: center;
+    width:2000%;
+    color:white;
+    background-color: white;
 }
 /* end footer---------------------------------------------------------------------------------------------- */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -213,6 +304,11 @@ footer a{
         display:none;
     }
     /* end nav............................ */
+    /* start main */
+    main>.row:nth-child(5)>.col{
+        background-image: linear-gradient(to bottom ,grey 40%,burlywood 60% );
+    }
+    /* end main */
     /* start footer....................... */
     footer>.row>div{
         width: 100%;
