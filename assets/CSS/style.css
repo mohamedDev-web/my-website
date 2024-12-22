@@ -1,6 +1,7 @@
 body{
     padding:0px;
     margin:0px;
+    overflow-x: hidden;
 }
 /* start nav------------------------------------------------------------------------------------------------------- */
 nav{
@@ -141,7 +142,7 @@ main hr{
 }
 /* start .row 2 */
 main>.row:nth-child(2){
-    width:110%;
+    width:105%;
     background-color: burlywood;
    
 }
@@ -280,6 +281,11 @@ footer hr{
         display: none;
     }
        /* end nav............................ */
+         /* start main */
+    main>.row:nth-child(5)>.col{
+        background-image: linear-gradient(to bottom ,grey 40%,burlywood 60% );
+    }
+    /* end main */
     /* start footer....................... */
     footer>.row>div{
         width: 50%;
