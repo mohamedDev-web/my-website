@@ -1,236 +1,269 @@
-body{
-    padding:0px;
-    margin:0px;
+body {
+    padding: 0px;
+    margin: 0px;
     overflow-x: hidden;
 }
+
 /* start nav------------------------------------------------------------------------------------------------------- */
-nav{
+nav {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
 }
-nav>ul{
+
+nav>ul {
     margin-top: 0px;
     background-color: burlywood;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom-width:3px;
-    border-bottom-style:solid;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
     animation-name: border-color;
-    animation-duration:2s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite
 }
-@keyframes border-color{
-    0%{
-        border-color:burlywood
+
+@keyframes border-color {
+    0% {
+        border-color: burlywood
     }
-    50%{
-        border-color:chocolate;
+
+    50% {
+        border-color: chocolate;
     }
-    100%{
-        border-color:burlywood
+
+    100% {
+        border-color: burlywood
     }
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
-    color:white;
+    color: white;
 
 }
-.nav-link:hover{
-    color:chocolate;
+
+.nav-link:hover {
+    color: chocolate;
 }
 
 /* start li for form in the nav tag -------------------------------------------*/
-#search-input-nav{
-    border-top-right-radius:0px;
-    border-bottom-right-radius:0px;
-    border-bottom-left-radius:50px;
-    border-top-left-radius:50px;
+#search-input-nav {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
     border-color: chocolate;
-    border-width:2px;
+    border-width: 2px;
     background-color: burlywood;
     color: chocolate;
-    outline:none;
+    outline: none;
     box-shadow: 0px 0px 10px 1px chocolate inset;
     font-size: 15px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    animation:input-search;
-    animation-duration:1.5s;
+    animation: input-search;
+    animation-duration: 1.5s;
     animation-timing-function: linear;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
 }
-#search-input-nav::placeholder{
+
+#search-input-nav::placeholder {
     color: chocolate;
-    animation:input-search;
-    animation-duration:1.5s;
+    animation: input-search;
+    animation-duration: 1.5s;
     animation-timing-function: linear;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
 }
-@keyframes input-search{
-    0%{
-        color:chocolate;
+
+@keyframes input-search {
+    0% {
+        color: chocolate;
     }
-   
-    50%{
-        color:rgba(210, 105, 30, 0.742);
+
+    50% {
+        color: rgba(210, 105, 30, 0.742);
     }
-   
-    100%{
-        color:chocolate;
+
+    100% {
+        color: chocolate;
     }
 }
-#search-button{
-     background-color: chocolate;
-     color: burlywood;
-     border:none;
-     border-top-right-radius:50px;
-    border-bottom-right-radius:50px;
+
+#search-button {
+    background-color: chocolate;
+    color: burlywood;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
+
 /* end li for form in the nav tag --------------------------------------------*/
 /* start for third li for pages */
-nav>ul>li:nth-child(3)>ul>.nav-item:first-child .nav-link{
-    color:chocolate ;
+nav>ul>li:nth-child(3)>ul>.nav-item:first-child .nav-link {
+    color: chocolate;
 }
+
 /* end for third li for icon list  */
 
 
-nav>ul>li:nth-child(5){
+nav>ul>li:nth-child(5) {
     display: none;
 }
-#i-icons-list{
-    background-color:chocolate;
-    color:burlywood;
+
+#i-icons-list {
+    background-color: chocolate;
+    color: burlywood;
     border: none
 }
-.bi-person-circle{
+
+.bi-person-circle {
     font-size: 15px;
     padding: 0;
     margin: 0;
 }
-.list{
-    width:200px;
+
+.list {
+    width: 200px;
     height: 90vh;
-    position:absolute;
-    top:50px;
-    right:0;
+    position: absolute;
+    top: 50px;
+    right: 0;
     z-index: 1000;
     background-color: burlywood;
     transition-duration: 1.2s;
-    transition-timing-function: linear ;
+    transition-timing-function: linear;
 }
-.list>ul>li:first-child{
+
+.list>ul>li:first-child {
     display: none;
 }
-.list>ul>li:hover{
+
+.list>ul>li:hover {
     background-color: rgb(243, 199, 142);
 }
+
 /* end nav --------------------------------------------------------------------------------------*/
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* start main -----------------------------------------------------------------------------------------------*/
-main{
-    width:100%;
+main {
+    width: 100%;
 }
+
 /*start  second div.row ----------------------------------------- */
-main hr{
+main hr {
     display: inline-block;
-    width:150px;
+    width: 150px;
     height: 10px;
     border-radius: 50px;
     background-color: chocolate;
 }
+
 /* start .row 2 */
-main>.row:nth-child(2){
-    width:105%;
+main>.row:nth-child(2) {
+    width: 105%;
     background-color: burlywood;
-   
+
 }
-main>.row:nth-child(2)>.col-8{
+
+main>.row:nth-child(2)>.col-8 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    gap:10px;
-  
+    gap: 10px;
 
-    
+
+
 }
-main>.row:nth-child(2)>.col-8 img{
+
+main>.row:nth-child(2)>.col-8 img {
     width: 250px;
 
 }
+
 /* end .row 2 */
 /* start .row 3 */
-main>.row:nth-child(3){
-    background-image: linear-gradient(to bottom, burlywood 95%,rgba(220, 125, 0, 0.443) 100%);
-   
+main>.row:nth-child(3) {
+    background-image: linear-gradient(to bottom, burlywood 95%, rgba(220, 125, 0, 0.443) 100%);
+
 }
-main>.row:nth-child(3)>col,main>.row:nth-child(5)>col {
-    width:100%;
+
+main>.row:nth-child(3)>col,
+main>.row:nth-child(5)>col {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content:center;
-    background-image: linear-gradient(to bottom, burlywood 95%,rgba(220, 125, 0, 0.443) 100%);
+    justify-content: center;
+    background-image: linear-gradient(to bottom, burlywood 95%, rgba(220, 125, 0, 0.443) 100%);
     border-bottom: 3px solid chocolate;
-    
+
 }
+
 /* end .row 3*/
 /* start .row  4*/
-main>.row:nth-child(4){
-    display:flex;
-    flex-flow:row wrap;
-    justify-content: center; 
-    background-image: linear-gradient(to bottom, burlywood 95%,rgba(220, 125, 0, 0.443) 100%);
+main>.row:nth-child(4) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, burlywood 95%, rgba(220, 125, 0, 0.443) 100%);
     border-bottom: 3px solid chocolate;
-     padding-bottom: 200px;
+    padding-bottom: 200px;
 }
-main>.row:nth-child(4)>.col{
-   
-   margin-top: 0;
+
+main>.row:nth-child(4)>.col {
+
+    margin-top: 0;
     width: 600px;
-    overflow-x:scroll;
+    overflow-x: scroll;
     display: flex;
-    gap:20px;
+    gap: 20px;
 }
-.card{
-    width:300px;
-    display:flex;
-    flex-flow:column wrap;
-    justify-content:space-between;
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
     flex-shrink: 0;
-   
+
 }
-.card div{
-    width:100%;
+
+.card div {
+    width: 100%;
     display: flex;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     justify-content: space-evenly;
 }
-.card span i{
-     color:orange;
+
+.card span i {
+    color: orange;
 }
 
 
 /* end  .row 4 */
 /* start .row 5 */
-main>.row:nth-child(5)>.col{
+main>.row:nth-child(5)>.col {
     width: 100%;
-    padding:50px;
-    background-image: linear-gradient(to right,grey 20%,burlywood 40%);
+    padding: 50px;
+    background-image: linear-gradient(to right, grey 20%, burlywood 40%);
     display: flex;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     margin-top: 0;
 }
-main>.row:nth-child(5) img{
-    width:300px;
+
+main>.row:nth-child(5) img {
+    width: 300px;
     border-radius: 100px;
 }
-main>.row:nth-child(5)>.col>div{
+
+main>.row:nth-child(5)>.col>div {
     width: 50%;
 
 }
+
 /* end .row 5 */
 /* end second div.row -------------------------------------------- */
 
@@ -238,86 +271,105 @@ main>.row:nth-child(5)>.col>div{
 /* end main --------------------------------------------------------------------------------------------------*/
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* start footer-----------------------------------------------------------------------------------------------*/
-footer{
+footer {
     background-color: black;
     color: white;
-    width:100%;
+    width: 100%;
 }
-footer>.row{
-    width:100%;
+
+footer>.row {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
-footer>.row>div{
+
+footer>.row>div {
     width: 33.3%;
-    height:fit-content;
+    height: fit-content;
     text-align: center;
 }
-footer .img-App{
-    width:100%
+
+footer .img-App {
+    width: 100%
 }
-footer .img-App img{
+
+footer .img-App img {
     width: 45%;
 }
-footer a{
-   text-decoration:none;
-   color:white;
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
-footer hr{
+
+footer hr {
     text-align: center;
-    width:2000%;
-    color:white;
+    width: 2000%;
+    color: white;
     background-color: white;
 }
+
 /* end footer---------------------------------------------------------------------------------------------- */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* responsive ..............................................................................................*/
-@mediA screen and (max-width:800px){
-      /* start nav .......................*/
-    nav>ul>li:nth-child(5){
+@mediA screen and (max-width:800px) {
+
+    /* start nav .......................*/
+    nav>ul>li:nth-child(5) {
         display: block;
     }
-    nav>ul>li:nth-child(3){
+
+    nav>ul>li:nth-child(3) {
         display: none;
     }
-       /* end nav............................ */
-         /* start main */
-    main>.row:nth-child(5)>.col{
-        background-image: linear-gradient(to bottom ,grey 40%,burlywood 60% );
+
+    /* end nav............................ */
+    /* start main */
+    main>.row:nth-child(5)>.col {
+        background-image: linear-gradient(to bottom, grey 40%, burlywood 60%);
     }
+
     /* end main */
     /* start footer....................... */
-    footer>.row>div{
+    footer>.row>div {
         width: 50%;
     }
-     /* end footer......................... */
+
+    /* end footer......................... */
 
 }
 
-@media screen and (max-width:444px){
+@media screen and (max-width:444px) {
+
     /* start nav .......................*/
-    nav{
+    nav {
         height: 60px;
     }
-    ul{
+
+    ul {
         margin: 0px;
         height: 100%;
     }
-    .list>ul>li:first-child{
+
+    .list>ul>li:first-child {
         display: block;
     }
-    nav>ul>li:nth-child(2){
-        display:none;
+
+    nav>ul>li:nth-child(2) {
+        display: none;
     }
+
     /* end nav............................ */
     /* start main */
-    main>.row:nth-child(5)>.col{
-        background-image: linear-gradient(to bottom ,grey 40%,burlywood 60% );
+    main>.row:nth-child(5)>.col {
+        background-image: linear-gradient(to bottom, grey 40%, burlywood 60%);
     }
+
     /* end main */
     /* start footer....................... */
-    footer>.row>div{
+    footer>.row>div {
         width: 100%;
     }
+
     /* end footer......................... */
 }

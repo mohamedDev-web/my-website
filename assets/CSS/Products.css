@@ -1,0 +1,96 @@
+body{
+    background-color:burlywood;
+}
+nav>ul>li:nth-child(3)>ul>.nav-item:first-child .nav-link {
+    color: white;
+}
+
+nav>ul>li:nth-child(3)>ul>.nav-item:nth-child(2) .nav-link {
+    color: chocolate;
+}
+/* start main ------------------------------------------------------------------------------------------------*/
+main{
+    margin-top: 100px;
+    margin-bottom:100px;
+    width:100%;
+     display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 0;
+}
+main .row{
+    width:100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+   
+}
+.container-fluid{
+    width:1000px;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items: center;
+    padding:0;
+    margin: 0;
+}
+
+
+
+/* start first div.row tag in the main tag */
+
+main .row:nth-child(1)>.col{
+  
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+}
+main .row:nth-child(1)>.col>select{
+    width: 200px;
+}
+main .row:nth-child(1)>.col>h2{
+    color: chocolate;
+    font-family:cursive;
+}
+/* end first div.row tag in the main tag  */
+/* start second div.row tag in the main tag  */
+main .row:nth-child(2)>.col{
+    
+    background-color: white;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    gap:10px;
+}
+
+.card-img-top{
+    width:100%;
+}
+/* start third div.row in the main tag */
+main .row:nth-child(3)>.col{
+    background-color:white;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:flex-start;
+    padding-top:10px;
+}
+/* end third div.row in the main tag */
+
+/* end second div.row tag in the main tag */
+
+/* end main -----------------------------------------------------------------------*/
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* responsive  */
+@media screen and (max-width:767px){
+    main .card{
+        margin: 0;
+        width:100%;
+    }
+    
+}
+
