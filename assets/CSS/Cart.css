@@ -1,0 +1,64 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
+/* start style of main tag */
+main{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color:burlywood;
+}
+.cart{
+    width:80%;
+
+}
+/* start style table */
+table{
+    width: 100%;
+    margin-top:50px;
+}
+table tr:nth-child(1) th{
+    background-color: chocolate;
+    color:white;
+}
+/* start the product column and style img tag  */
+tr>td:nth-of-type(1){
+    width:50%;
+}
+tr>td>div{
+    width:100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:center;
+}
+tr>td>div img{
+    width: 60%;
+    height: fit-content;
+
+}
+tr>td>div>div{
+    width:35%;
+}
+div>table>tr:last-child td:nth-child(1){
+    background-color: burlywood;
+    color: chocolate;
+}
+
+td>table{
+    width: 50%;
+    margin: 0px;
+    padding:0px;
+    border-top:3px solid ;
+    border-top-color: chocolate;
+}
+ /* end the product*/ 
+
+
+
+
+
