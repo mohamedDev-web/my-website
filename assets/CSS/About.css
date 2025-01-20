@@ -5,3 +5,72 @@ nav>ul>li:nth-child(3)>ul>.nav-item:first-child .nav-link {
 nav>ul>li:nth-child(3)>ul>.nav-item:nth-child(3) .nav-link {
     color: chocolate;
 }
+/* ----------------------------------------------------- */
+.hero {
+    background-image: url('../Imgs/a3.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    direction: rtl;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+/* ------------------------------------------------------------ */
+.about-us {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    direction: rtl;
+}
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-us p {
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+/* --------------------------------------------------------- */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px 20px;
+    direction: rtl;
+}
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+/* --------------------------------------------------------------- */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #eaeaea;
+    direction: rtl;
+}
+.testimonial {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+.testimonial p {
+    font-style: italic;
+}
+/* ------------------------------------------------------------------ */
+
+
+
+
+
+
+
