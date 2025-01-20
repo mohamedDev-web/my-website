@@ -6,28 +6,50 @@
   body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg,rgb(161, 83, 27), chocolate);
+    background-color: burlywood;
     
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+  }
+  nav>ul>li:nth-child(3)>ul>.nav-item:first-child .nav-link {
+    color: white;
+}
+
+nav>ul>li:nth-child(3)>ul>.nav-item:nth-child(5) .nav-link {
+    color: chocolate;
+}
+  /* start main -----------------------------------------------------------------------------------------------*/
+  main{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height:90vh ;
   }
   .center{
-    position: absolute;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items:center;
+
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     width: 400px;
     background: white;
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
   }
   .center h1{
+    width: 100%;
     text-align: center;
     padding: 20px 0;
     border-bottom: 1px solid chocolate;
     color: chocolate;
   }
   .center form{
+    width: 100%;
     padding: 0 40px;
     box-sizing: border-box;
   }
@@ -44,6 +66,7 @@
     border: none;
     background: none;
     outline: none;
+    color: chocolate;
   }
   .txt_field label{
     position: absolute;
@@ -110,4 +133,19 @@
   }
   .signup_link a:hover{
     text-decoration: underline;
+  }
+  /* and main  */
+  /* responsive  */
+  @media screen and (max-width:400px){
+    .center{
+        width:100%;
+    }
+    .center form{
+        width:100%;
+        padding: 0px 0px;
+        margin:0;
+    }
+    form div{
+        width:100%;
+    }
   }

@@ -126,9 +126,9 @@ nav>ul>li:nth-child(5) {
 
 .list {
     width: 200px;
-    height: 90vh;
+
     position: absolute;
-    top: 50px;
+  
     right: 0;
     z-index: 1000;
     background-color: burlywood;
@@ -310,6 +310,38 @@ footer hr {
 }
 
 /* end footer---------------------------------------------------------------------------------------------- */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* start style scroll bar*/
+body::-webkit-scrollbar{
+    width:10px;
+    
+}
+body::-webkit-scrollbar-track{
+    background-color: #deb887;
+    border-radius: 0px 20px 20px 0px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(210, 105, 30, 0.756);
+    border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #d2691e;
+}
+/* --------- */
+main>.row:nth-child(4)>.col::-webkit-scrollbar{
+    height: 10px;
+}
+main>.row:nth-child(4)>.col::-webkit-scrollbar-track{
+  background-color: burlywood;
+}
+main>.row:nth-child(4)>.col::-webkit-scrollbar-thumb{
+    background-color:rgba(210, 105, 30, 0.717);
+    border-radius:20px;
+}
+main>.row:nth-child(4)>.col::-webkit-scrollbar-thumb:hover{
+    background-color:chocolate;
+}
+/* end style scroll bar */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* responsive ..............................................................................................*/
 @mediA screen and (max-width:800px) {
