@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../bootstrap5/package/font/bootstrap-icons.min.css">
   <!-- link for my css files  -->
   <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/login.css">
 </head>
 
 <body class="m-0 p-0">
@@ -41,11 +42,11 @@
           <li class="nav-item"><a href="Products.html" class="nav-link">Products</a></li>
           <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="Contact-us.html" class="nav-link">Contact us</a></li>
-          <li class="nav-item"><a href="login.html" class="nav-link"><i class="bi bi-person-circle"></i></a></li>
+          <li class="nav-item"><a href="account.html" class="nav-link"><i class="bi bi-person-circle"></i></a></li>
         </ul>
         <!-- end nav vertical -->
       </li>
-      <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-bag"></i></a></li>
+      <li class="nav-item"><a href="cart.html" class="nav-link"><i class="bi bi-bag"></i></a></li>
       <!--  Fourth for icon list and list  -->
       <li class="nav-item">
         <!-- start link with style and property button ,this for show .list-->
@@ -69,8 +70,8 @@
 
             <li class="nav-item text-start"><a href="../../index.html" class="nav-link">Home</a></li>
             <li class="nav-item text-start"><a href="Products.html" class="nav-link">Products</a></li>
-            <li class="nav-item text-start"><a href="About.html" class="nav-link">About</a></li>
-            <li class="nav-item text-start"><a href="login.html" class="nav-link">Contact us</a></li>
+            <li class="nav-item text-start"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item text-start"><a href="#" class="nav-link">Contact us</a></li>
 
           </ul>
         </div>
@@ -83,66 +84,33 @@
   <!-- end nav -->
   <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   <!-- start main -->
-   <main>
+  <main>
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+          Not a member? <a href="signup.html">Signup</a>
+        </div>
+      </form>
+    </div>
 
    </main>
     <!-- end main -->
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- start footer -->
-    <footer>
-      <!-- start first div.row -->
-      <div class="row">
-        <div class="col-md col-xl">
-          <h3>Download our app</h3>
-          <p>Download App for Android and ios mobile phone</p>
-          <div class="img-App">
-            <img src="assets/Imgs/download (1).jpeg" alt="">
-            <img src="assets/Imgs/googlePlay.png" alt="">
-          </div>
-        </div>
-        <div class="col-md col-xl text-center">
-          <img src="assets/Imgs/MY-STORE-DARK-LOGO.png" alt="">
-          <p>Our Purpose Is To Sustainably Make the wonderfull and best of clothes Accessible to the Many.</p>
-
-        </div>
-        <!-- start col for social media -->
-        <div class=" col-md-12 col-xl">
-          <ul type="none">
-            <li>
-              <h3>
-                Useful Links
-              </h3>
-            </li>
-
-            <li><a href="#">Coupons</a></li>
-            <li><a href="#">Blog Post</a></li>
-            <li><a href="#">Return Policy</a></li>
-            <li><a href="#">Join Affiliate</a></li>
-
-          </ul>
-
-        </div>
-        <!-- end col for social media -->
-      </div>
-      <!-- end first div.row  -->
-
-      <!-- start second div.row  -->
-      <div class="row">
-        <hr>
-        <span class="text-center">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-threads"></i></a>
-          <a href="#"><i class="bi bi-github"></i></a>
-          <a href="#"><i class="bi bi-telegram"></i></a>
-        </span>
-        <span class="text-center">
-          2024 &copy; copyright from My-Store
-
-        </span>
-      </div>
-      <!-- end second div.row -->
-    </footer>
+   
 
 
 
