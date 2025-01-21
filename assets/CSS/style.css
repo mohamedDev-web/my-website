@@ -226,7 +226,12 @@ main>.row:nth-child(4)>.col {
     flex-flow: column wrap;
     justify-content: space-between;
     flex-shrink: 0;
+    transition-duration: .9;
 
+}
+.card:hover{
+    scale: 0.99;
+    
 }
 
 .card div {
